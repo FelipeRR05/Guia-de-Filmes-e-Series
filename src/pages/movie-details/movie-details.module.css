@@ -1,0 +1,236 @@
+.detailsContainer {
+  position: relative;
+  padding: 20px;
+  color: white;
+  background-color: rgba(40, 40, 40, 0.65);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.infosContainer {
+  background-color: rgba(40, 40, 40, 0.9);
+  color: white;
+  padding: 20px;
+}
+
+.poster {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.title {
+  margin-bottom: 7px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.genre {
+  margin-bottom: 3px;
+}
+
+.ageRating {
+  font-weight: bold;
+  background-color: #f5424286;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.ratingCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1a2585;
+  color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.userRatingText {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streamingProviders {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.providers {
+  display: flex;
+  gap: 10px;
+}
+
+.provider img {
+  border-radius: 5px;
+}
+
+.similarContainer {
+  margin-top: 30px;
+}
+
+.castContainer {
+  margin-top: 30px;
+}
+
+.trailerTitle {
+  margin-bottom: 10px;
+}
+
+.trailer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 90vw;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .poster {
+    width: 350px;
+  }
+
+  .info {
+    max-width: 50%;
+  }
+
+  .ratingCircle {
+    width: 80px;
+    height: 80px;
+    font-size: 22px;
+  }
+
+  .userRatingText {
+    font-size: 16px;
+  }
+
+  .meta {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .videoWrapper {
+    width: 70vw;
+    padding-top: 39.375%;
+  }
+
+  .sidebar {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .ratingCircle {
+    background-color: #a688fa;
+    color: #212529;
+  }
+
+  .ratingButton {
+    background-color: #a688fa;
+    color: #212529;
+  }
+
+  .ratingButton:hover {
+    background-color: #7a5af5;
+  }
+}

@@ -1,0 +1,12 @@
+.favorites {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .favorites {
+    background-color: #282828;
+    color: #f8f9fa;
+  }
+}

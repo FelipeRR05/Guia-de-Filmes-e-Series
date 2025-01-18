@@ -1,0 +1,17 @@
+.catalog {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 10px;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .catalog {
+    background-color: #282828;
+    color: #f8f9fa;
+  }
+}

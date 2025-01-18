@@ -1,0 +1,145 @@
+.searchContainer {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBar {
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  background-color: #1a2585;
+  border: none;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+.suggestions {
+  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  list-style-type: none;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestionItem:last-child {
+  border-bottom: none;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+}
+
+.results {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.suggestionItem.disabled {
+  pointer-events: none;
+}
+
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  background-color: #ffffff;
+  border: none;
+  color: #212529;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.clearButton:hover {
+  color: #0056b3;
+}
+
+@media (min-width: 769px) {
+  .searchContainer {
+    padding: 20px;
+  }
+
+  .suggestions {
+    max-height: 300px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .searchContainer {
+    background-color: #282828;
+    color: #f8f9fa;
+  }
+
+  .searchBar {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    background-color: #282828;
+  }
+
+  .searchButton {
+    background-color: #a688fa;
+    color: #f8f9fa;
+  }
+
+  .searchButton:hover {
+    background-color: #7a5af5;
+  }
+
+  .suggestions {
+    background-color: #282828;
+    color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  .suggestionItem {
+    border-bottom: 1px solid #3f3f3f;
+  }
+
+  .suggestionItem:hover {
+    background-color: #202020;
+  }
+
+  .clearButton:hover {
+    color: #7a5af5;
+  }
+}

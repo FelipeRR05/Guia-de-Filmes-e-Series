@@ -1,0 +1,22 @@
+.carouselContainer {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+@media (pointer: fine) {
+  .carousel {
+    scrollbar-width: auto;
+    scrollbar-color: hsl(0, 0%, 67%) transparent;
+  }
+}
